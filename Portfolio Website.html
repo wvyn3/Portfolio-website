@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Portfolio Website.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#technicalskills">Technical Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="homePage">
+        <h1>Hi There, I Am Wayne Gere</h1>
+        <p class="student">Computer Science Student</p>
+        <a href="#about" class="button">About Me</a>
+   </div>
+
+    </section>
+    <section id="about" class="about">
+        <div class="aboutMeTemplate">
+            <h2> About Me</h2>
+            <p>Innovative and driven Computer Science student <br> with strong foundation in Software
+            Development and Web Technologies <br> as well as a good foundation in Machine 
+            Learning, <br> with an interest in Artificial Intelligence as well as Algorithmic Trading.</p>
+
+        </div>
+
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="sectionTitle">Featured Projects</h2>
+            <div class="sectionDescription">
+                <p>These are some of the technical projects i have featured in</p>
+            </div>
+            <div class="grid">
+                <div class="featureCard">
+                    <div class="template-coffee">
+                    </div>
+                    <h3>Coffee Shop Website</h3>
+                    <p>Simple website leveraging the use of web deveolpment technologies</p>
+                </div>
+                <div class="featureCard">
+                    <div class="template-trading">
+                    </div>
+                    <h3>Financial Markets Trading System</h3>
+                    <p>A trading bot that automates trading</p>
+                </div>
+                <div class="featureCard">
+                    <div class="template-android">
+                    </div>
+                    <h3>Android Application</h3>
+                    <p>a simple andoid application</p>
+                </div>
+                <div class="featureCard">
+                    <div class="template-meal">
+                    </div>
+                    <h3>Intelligent AI Meal Tracker</h3>
+                    <p>a simple andoid application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="technicalskills" class="technicalSkills">
+        <div class="container">
+            <h2 class="sectionTitle">Technical Skills</h2>
+            <div class="sectionDescription">
+                <p>These are some of the technical skills i posses</p>
+            </div>
+            <div class="grid">
+                <div class="programmingLanguages">
+                    <div>
+                        <h2>Programming Languages</h2>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skillLevel Python">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skillLevel Java">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="skill-bar">
+                            <div class="skillLevel C">60%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skillLevel JS">50%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dart</span>
+                        <div class="skill-bar">
+                            <div class="skillLevel Dart">60%</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="webDev">
+                    <div>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="skill-bar">
+                            <div 
+                            class="skillLevel html">90%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="skill-bar">
+                            <div 
+                            class="skillLevel css">70%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div 
+                            class="skillLevel react">60%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Django</span>
+                        <div class="skill-bar">
+                            <div 
+                            class="skillLevel django">60%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="databases">
+                    <div>
+                        <h2>Databases</h2>
+                    </div>
+                    <div class="skill">
+                        <span>SQL(MySQL)</span>
+                        <div class="skill-bar">
+                            <div 
+                            class="skillLevel django">60%
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+            
+    <section id="contact">
+        <div class="contact-form">
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="firstName">First name</label> <br>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last name</label> <br>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label> <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Comments/Questions</label> <br>
+    
+                    <textarea id="comments" name="comments" placeholder="Tell us about your mining project or questions..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">SEND</button>
+            </form>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Wayne Gere</p>
+        </div>
+
+    </footer>
+    <script src="Portfolio Website.js"></script>
+    
+</body>
+</html>
